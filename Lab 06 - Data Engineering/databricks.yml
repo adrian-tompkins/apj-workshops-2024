@@ -1,0 +1,15 @@
+bundle:
+  name: apjuice
+
+include:
+  - "02 - DAB/resources/*.yml"
+
+variables:
+  target_prefix:
+    description: Prefix for dlt target
+
+targets:
+  dev:
+    mode: development
+    default: true
+

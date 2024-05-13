@@ -1,0 +1,20 @@
+resources:
+  pipelines:
+    apjuice_pipeline:
+      name: apjuice_pipeline
+      catalog: apjworkshop24
+      target: ${var.target_prefix}_dlt_bundle
+      development: true
+      continuous: false
+      libraries:
+        - notebook:
+            path: ../../01 - DLT/2 - Transform.sql
+      clusters:
+      - label: default
+        autoscale:
+          min_workers: 1
+          max_workers: 1
+          mode: ENHANCED
+      configuration:
+        bundle.sourcePath: /Workspace/${workspace.file_path}/src
+        current_user_id: ${workspace.current_user.userName}
