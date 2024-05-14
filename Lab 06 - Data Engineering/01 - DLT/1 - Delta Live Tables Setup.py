@@ -21,7 +21,7 @@
 
 # COMMAND ----------
 
-# MAGIC %run ../Utils/prepare-lab-environment-mini
+# MAGIC %run ../Utils/prepare-lab-environment
 
 # COMMAND ----------
 
@@ -42,7 +42,7 @@
 
 storage_location = f'/FileStore/tmp/{current_user_id}/dlt_pipeline'
 pipline_name = f"{current_user_id}_pipeline"
-notebook_path = f"/Repos/{current_user_id}/apjbootcamp2023/Lab 01 - Data Engineering/01b - DLT/2 - Transform"
+notebook_path = f"/Repos/{current_user_id}/apj-workshops-2024/Lab 06 - Data Engineering/01 - DLT/2 - Transform"
 
 displayHTML("""<h2>Use these values to create your Delta Live Pipeline</h2>""")
 displayHTML("""<b>Pipeline name: </b>""")
