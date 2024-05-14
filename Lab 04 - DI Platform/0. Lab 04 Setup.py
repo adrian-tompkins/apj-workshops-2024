@@ -10,7 +10,7 @@ catalog = "apjworkshop24"
 database_name = current_user_id.split("@")[0].replace(".", "_")
 
 # create catalog
-spark.sql(f"CREATE CATALOG IF NOT EXISTS {catalog};")
+# spark.sql(f"CREATE CATALOG IF NOT EXISTS {catalog};")
 
 spark.sql(f"USE CATALOG {catalog};")
 

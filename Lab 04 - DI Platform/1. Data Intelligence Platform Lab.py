@@ -59,7 +59,7 @@
 # MAGIC
 # MAGIC 1. Open the `SQL Editor` on the Databricks Workspace menu and create a new query tab<br /><br />
 # MAGIC 2. Select the correct catalog and schema at the top drop down menu<br /><br />
-# MAGIC 3. Click on the Databricks Assistant icon on the left hand side of the SQL Editor window and type the prompt: **How can I join the tables dim_products and product_description to add descriptions to my products?**<br />
+# MAGIC 3. Click on the Databricks Assistant icon on the left hand side of the SQL Editor window and type the prompt: **How can I combine the tables dim_products and product_description together, to add descriptions to my products? The products "id" column is related to the produc description "prod_name" column. Please bring back all columns in the result.**<br />
 # MAGIC As the Databricks Assistant can provide different results every time you aske the same question, go ahead and do a few more prompt iterations to get to a usable query, if necessary. If the Assistant can give you an `INNER JOIN` query where you can replace the column names, go ahead and adjust accordingly: <br /><br />
 # MAGIC
 # MAGIC The final query should be similar to this:
